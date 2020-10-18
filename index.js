@@ -166,14 +166,23 @@
 //      c=b-1
 //     }
 //     if(a[i]==a[i]){
-//         c=-1
+//         c=-1s
 //        }
 // }
 // console.log("Second Max: ",c);
+// Cách 2: 
+// function maxTwo(arr) {
+//     var maxValue = Math.max(...arr)
+//     var result = arr.filter(item => item < maxValue);
+//     result.sort((a,b) => a -b);
+//     return result.length != 0 ? result[result.length - 1] : -1;
+// }
+// console.log(maxTwo(a))
 
 // 31. Cho một mảng là một tập các số nguyên dương và một số nguyên dương k, tìm xem trong mảng có tồn tại 3 số có tổng bằng k? (1s) , length of array.
 // VD: a = [1,2,3,4,5,6,7,8,9,9,9,8,7,6,5,4,3,2,1]; k = 26 .Output: YES.giải thích ( 9 + 9 + 8)
 // VD: a = [1,2,3,4,5,6,7,8,9,9,9,8,7,6,5,4,3,2,1]; k = 30 .Output: NO
+
 
 // 32. Cho một mảng là một tập các số nguyên dương theo thứ tự tăng dần, và một số k. Hãy chèn k vào mảng và đảm bảo mảng ko mất tính tăng dần
 // VD: a = [1,3,6,9,11,20]; k = 13 .Output: a = [1,3,6,9,11,13,20]
